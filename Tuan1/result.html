@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kết quả Assignment - UTC IT Club</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+
+      header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 30px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 1rem;
+        opacity: 0.9;
+      }
+
+      .content {
+        padding: 30px;
+      }
+
+      .intro {
+        background: #e3f2fd;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        border-left: 4px solid #2196f3;
+      }
+
+      .intro h2 {
+        color: #1976d2;
+        margin-bottom: 10px;
+      }
+
+      .intro p {
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .data-section {
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+
+      .data-section h3 {
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .code-display {
+        background: #1e1e1e;
+        color: #d4d4d4;
+        padding: 15px;
+        border-radius: 8px;
+        font-family: "Courier New", monospace;
+        font-size: 13px;
+        overflow-x: auto;
+        line-height: 1.6;
+      }
+
+      .section {
+        margin-bottom: 40px;
+        padding: 25px;
+        background: #ffffff;
+        border-radius: 10px;
+        border: 2px solid #667eea;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .section h2 {
+        color: #667eea;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e0e0e0;
+      }
+
+      .requirement {
+        background: #fff9e6;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 15px 0;
+        border-left: 4px solid #ffc107;
+      }
+
+      .requirement h4 {
+        color: #f57c00;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+
+      .requirement ul {
+        margin-left: 20px;
+        color: #333;
+      }
+
+      .requirement li {
+        margin: 8px 0;
+        line-height: 1.6;
+      }
+
+      .result-box {
+        background: #1e1e1e;
+        color: #4ec9b0;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: "Courier New", monospace;
+        font-size: 14px;
+        line-height: 1.8;
+        margin-top: 15px;
+        border: 2px solid #4ec9b0;
+        max-height: 400px;
+        overflow-y: auto;
+      }
+
+      .result-title {
+        color: #9cdcfe;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      .console-line {
+        margin: 5px 0;
+      }
+
+      .console-header {
+        color: #569cd6;
+        font-weight: bold;
+      }
+
+      .console-success {
+        color: #4ec9b0;
+      }
+
+      .console-warning {
+        color: #dcdcaa;
+      }
+
+      .console-error {
+        color: #f48771;
+      }
+
+      .console-info {
+        color: #9cdcfe;
+      }
+
+      footer {
+        background: #f5f5f5;
+        padding: 20px;
+        text-align: center;
+        color: #666;
+        border-top: 2px solid #e0e0e0;
+      }
+
+      .note {
+        background: #e8f5e9;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 20px 0;
+        border-left: 4px solid #4caf50;
+      }
+
+      .note strong {
+        color: #2e7d32;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>📊 Kết quả Assignment JavaScript</h1>
+        <p>UTC IT Club - Review JavaScript</p>
+      </header>
+
+      <div class="content">
+        <!-- Giới thiệu -->
+        <div class="intro">
+          <h2>📝 Giới thiệu</h2>
+          <p>
+            Đây là kết quả thực thi của các bài tập JavaScript về Hoisting,
+            Scope, Destructuring, Async/Await và các khái niệm nâng cao khác.
+          </p>
+          <p>
+            <strong>File code:</strong> script.js |
+            <strong>File hiển thị:</strong> result.html
+          </p>
+        </div>
+
+        <!-- Dữ liệu ban đầu -->
+        <div class="data-section">
+          <h3>📦 Dữ liệu mẫu</h3>
+          <div class="code-display">
+            const members = [<br />
+            { id: 1, name: "Đức Vũ", position: "Member", joined: 2023 },<br />
+            { id: 2, name: "Hoàng Chuột", position: "Leader", joined: 2022 },<br />
+            { id: 3, name: "Nguyễn Hiếu", position: "Designer", joined: 2022
+            }<br />
+            ];
+          </div>
+        </div>
+
+        <!-- BÀI 1 -->
+        <div class="section">
+          <h2>📌 Bài 1: Hoisting & Scope</h2>
+
+          <div class="requirement">
+            <h4>🎯 Yêu cầu:</h4>
+            <ul>
+              <li>
+                Viết hàm <code>printClubName()</code> và gọi nó trước khi khai
+                báo
+              </li>
+              <li>
+                Trong hàm, truy cập biến <code>club</code> (var) và
+                <code>slogan</code> (const)
+              </li>
+              <li>Quan sát sự khác biệt giữa var và const về hoisting</li>
+              <li>
+                <strong>Output yêu cầu:</strong> Thấy club = undefined khi
+                hoisting, và ReferenceError nếu log slogan trước khai báo
+              </li>
+            </ul>
+          </div>
+
+          <div class="result-box">
+            <div class="result-title">💻 Kết quả Console:</div>
+            <div id="result1"></div>
+          </div>
+        </div>
+
+        <!-- BÀI 2 -->
+        <div class="section">
+          <h2>📌 Bài 2: Destructuring & Rest/Spread</h2>
+
+          <div class="requirement">
+            <h4>🎯 Yêu cầu:</h4>
+            <ul>
+              <li>
+                Dùng Destructuring lấy <code>memberName</code> và
+                <code>position</code> từ members[0]
+              </li>
+              <li>Dùng Spread tạo <code>newMember</code> từ members[1]</li>
+              <li>Ghi đè thuộc tính <code>joined: 2025</code></li>
+              <li>
+                <strong>Output yêu cầu:</strong> In memberName, position của
+                member đầu tiên và object newMember với joined = 2025
+              </li>
+            </ul>
+          </div>
+
+          <div class="result-box">
+            <div class="result-title">💻 Kết quả Console:</div>
+            <div id="result2"></div>
+          </div>
+        </div>
+
+        <!-- BÀI 3 -->
+        <div class="section">
+          <h2>📌 Bài 3: For...of & This & Arrow Function</h2>
+
+          <div class="requirement">
+            <h4>🎯 Yêu cầu:</h4>
+            <ul>
+              <li>
+                Tạo object <code>webTeam</code> với <code>teamName</code> và
+                <code>members</code>
+              </li>
+              <li>Dùng <code>for...of</code> để duyệt mảng members</li>
+              <li>
+                Dùng Arrow Function để giữ nguyên context của <code>this</code>
+              </li>
+              <li>In ra: "Ban Web UTC - Thành viên: [Tên]"</li>
+              <li>
+                <strong>Output yêu cầu:</strong> Mỗi dòng hiển thị "Ban Web UTC
+                - Thành viên: &lt;Tên&gt;" cho từng member
+              </li>
+            </ul>
+          </div>
+
+          <div class="result-box">
+            <div class="result-title">💻 Kết quả Console:</div>
+            <div id="result3"></div>
+          </div>
+        </div>
+
+        <!-- BÀI 4 -->
+        <div class="section">
+          <h2>📌 Bài 4: Async/Await & For...in</h2>
+
+          <div class="requirement">
+            <h4>🎯 Yêu cầu:</h4>
+            <ul>
+              <li>Viết async function <code>getStats()</code></li>
+              <li>
+                Dùng <code>await</code> để
+                <code>fetch</code> https://jsonplaceholder.typicode.com/users
+              </li>
+              <li>
+                Dùng <code>for...in</code> để duyệt tất cả properties của
+                <code>users</code> mà API trả về
+              </li>
+              <li>
+                <strong>Output yêu cầu:</strong> Hiển thị key/value của user đầu
+                tiên lấy từ API https://jsonplaceholder.typicode.com/users
+              </li>
+            </ul>
+          </div>
+
+          <div class="result-box">
+            <div class="result-title">💻 Kết quả Console:</div>
+            <div id="result4"></div>
+          </div>
+        </div>
+
+        <!-- Ghi chú -->
+        <div class="note">
+          <strong>📢 Lưu ý:</strong> Mở DevTools (F12) để xem console log gốc.
+          Kết quả trên đây được capture và hiển thị tự động từ file script.js
+        </div>
+      </div>
+
+      <footer>
+        <p>✨ Made with ❤️ by namkhuc</p>
+        <p>JavaScript Assignment - 2026</p>
+      </footer>
+    </div>
+
+    <script>
+      // Override console.log để capture output
+      const originalLog = console.log;
+      let currentSection = 1;
+
+      console.log = function (...args) {
+        // Gọi console.log gốc
+        originalLog.apply(console, args);
+
+        // Hiển thị lên HTML
+        const message = args
+          .map((arg) => {
+            if (typeof arg === "object") {
+              return JSON.stringify(arg, null, 2);
+            }
+            return String(arg);
+          })
+          .join(" ");
+
+        // Xác định section
+        if (message.includes("BÀI 1")) {
+          currentSection = 1;
+        } else if (message.includes("BÀI 2")) {
+          currentSection = 2;
+        } else if (message.includes("BÀI 3")) {
+          currentSection = 3;
+        } else if (message.includes("BÀI 4")) {
+          currentSection = 4;
+        }
+
+        // Thêm vào result box tương ứng
+        const resultBox = document.getElementById(`result${currentSection}`);
+        if (resultBox && message.trim() !== "") {
+          const line = document.createElement("div");
+          line.className = "console-line";
+
+          // Styling dựa trên nội dung
+          if (message.includes("===")) {
+            line.className += " console-header";
+          } else if (message.includes("✓") || message.includes("→")) {
+            line.className += " console-success";
+          } else if (message.includes("✗") || message.includes("Lỗi")) {
+            line.className += " console-error";
+          } else if (message.includes("💡") || message.includes("Gợi ý")) {
+            line.className += " console-info";
+          } else if (message.includes("⏳")) {
+            line.className += " console-warning";
+          }
+
+          line.textContent = message;
+          resultBox.appendChild(line);
+        }
+      };
+    </script>
+
+    <!-- Load JavaScript code -->
+    <script src="tuan1.js"></script>
+  </body>
+</html>
