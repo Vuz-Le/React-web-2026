@@ -11,6 +11,11 @@ const members = [
   { id: 3, memberName: "Nguyễn Hiếu", position: "Designer", joined: 2022 },
 ];
 // === TODO: User code here ===
+printClubName();
+function printClubName() {
+  console.log("club: ", club);
+  console.log("slogan", slogan);
+}
 //END
 
 var club = "Ban Web";
