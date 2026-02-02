@@ -56,5 +56,14 @@ webTeam.show();
 console.log("=== BÀI 4: ASYNC/AWAIT & FOR...IN ===");
 
 // === TODO: User code here ===
+async function getStats() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const users = await res.json();
+
+  const user = users[0];
+  for (const key in user) {
+    console.log(`${key}: ${user[key]}`);
+  }
+}
 //END
 getStats();
