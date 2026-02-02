@@ -38,6 +38,19 @@ console.log("");
 
 console.log("=== BÀI 3: VÒNG LẶP FOR & THIS & ARROW FUNCTION ===");
 // === TODO: User code here ===
+const webTeam = {
+  teamName: "Ban web UTC",
+  members,
+  show() {
+    for (m of this.members) {
+      const print = () => {
+        console.log(`${this.teamName} - Thành viên: ${m.memberName}`);
+      };
+      print();
+    }
+  },
+};
+webTeam.show();
 //END
 
 console.log("=== BÀI 4: ASYNC/AWAIT & FOR...IN ===");
