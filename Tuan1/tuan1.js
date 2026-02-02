@@ -11,7 +11,7 @@ const members = [
   { id: 3, memberName: "Nguyễn Hiếu", position: "Designer", joined: 2022 },
 ];
 // === TODO: User code here ===
-printClubName();
+// printClubName();
 function printClubName() {
   console.log("club: ", club);
   console.log("slogan", slogan);
@@ -28,6 +28,8 @@ console.log("");
 console.log("=== BÀI 2: DESTRUCTURING & REST/SPREAD ===");
 
 // === TODO: User code here ===
+const member = ({ memberName, position } = members[0]);
+const newMember = { ...member, joined: 2025 };
 //END
 
 console.log("Destructuring từ members[0]:", memberName, position);
